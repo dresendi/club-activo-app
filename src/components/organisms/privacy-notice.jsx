@@ -1,0 +1,26 @@
+export function PrivacyNotice() {
+  return <article className="privacy-notice">
+    <p className="eyebrow">Club Activo de Autismo I.A.P.</p>
+    <h1>Aviso de privacidad</h1>
+    <p>Última actualización: 19 de octubre de 2026.</p>
+    <h2>Responsable y contacto</h2>
+    <p>Club Activo de Autismo I.A.P., con domicilio en Calle 22, Tablaje 10132, Manere, 97345 Conkal, es responsable del tratamiento de los datos personales recabados a través de este portal. Para asuntos de privacidad, escribe a <a href="mailto:clubactivodeautismo@gmail.com">clubactivodeautismo@gmail.com</a>.</p>
+    <h2>Datos personales y finalidades</h2>
+    <p>Tratamos nombres y apellidos del participante y de su contacto, parentesco, teléfono, correo electrónico opcional, información de autenticación, solicitudes, vínculos entre participantes y contactos, estado de la cuenta y confirmación administrativa del pago. El portal no solicita números de tarjeta ni datos bancarios para cobrar.</p>
+    <p>Estos datos se utilizan para recibir y revisar solicitudes, identificar a participantes y personas responsables, gestionar altas, bajas y permisos, verificar teléfonos, permitir el acceso y recuperación de cuentas, confirmar administrativamente pagos y comunicar información relacionada con el servicio y las actividades del club.</p>
+    <p>No se contempla utilizar los datos de registro para publicidad ajena al servicio. Cualquier finalidad adicional que requiera consentimiento se informará y solicitará por separado; rechazarla no condicionará el servicio principal.</p>
+    <h2>Datos sensibles y representación</h2>
+    <p>La información sobre autismo, TDAH, sospechas de diagnóstico o necesidades de salud, incluida la que pueda inferirse de la participación en el club, puede constituir un dato personal sensible. Se limitará a lo necesario para la atención y organización de actividades y requerirá consentimiento expreso y por escrito o un mecanismo de autenticación legalmente admitido, salvo excepción legal. Consultar este aviso no equivale a otorgar ese consentimiento.</p>
+    <p>Los datos de menores de edad deberán proporcionarse por quien ejerza su representación legal. Ser contacto, familiar o cuidador no acredita por sí solo dicha representación. Cuando corresponda, se verificará la facultad para actuar por otra persona.</p>
+    <h2>Proveedores y transferencias</h2>
+    <p>El portal utiliza Supabase para datos y autenticación, y servicios de mensajería para enviar códigos por SMS o WhatsApp. Los proveedores podrán procesar información fuera de México conforme a sus funciones y las obligaciones aplicables. Los calendarios integrados de Google pueden recibir datos técnicos al cargarse. No se autoriza la venta de los datos. Las transferencias a terceros distintos de proveedores encargados deberán informarse y contar con consentimiento cuando sea exigible, salvo los supuestos permitidos por ley.</p>
+    <h2>Derechos ARCO, revocación y limitación de uso</h2>
+    <p>Puedes solicitar acceso, rectificación, cancelación u oposición, revocar tu consentimiento o limitar el uso o divulgación de tus datos escribiendo al correo indicado, con el asunto «Datos personales». Incluye tu nombre, medio para recibir respuesta, descripción de la solicitud y los datos relacionados. Para rectificaciones, indica el cambio y su soporte. Se solicitará acreditar identidad y, cuando proceda, representación mediante un medio adecuado, sin pedir información excesiva.</p>
+    <p>Se comunicará la determinación sobre solicitudes ARCO en un máximo de 20 días hábiles y, de resultar procedente, se hará efectiva dentro de los 15 días hábiles siguientes. Los plazos podrán ampliarse una sola vez por un periodo igual cuando exista justificación legal. Las solicitudes de revocación y limitación se atenderán por el mismo canal. La revocación no tiene efectos retroactivos y ciertas obligaciones legales pueden impedir la eliminación inmediata. Si los datos son necesarios para prestar el servicio, se explicarán las consecuencias de su limitación.</p>
+    <h2>Conservación, seguridad y tecnologías</h2>
+    <p>Los datos se conservarán durante el tiempo necesario para las finalidades informadas y las obligaciones aplicables; después corresponderá su bloqueo y supresión. Se aplican controles de acceso por cuenta y rol. La aplicación mantiene las credenciales de sesión en memoria mientras está abierta. Puedes cerrar sesión desde Mi cuenta. Al cerrar completamente la aplicación será necesario iniciar sesión de nuevo.</p>
+    <h2>Cambios y marco normativo</h2>
+    <p>Las modificaciones se publicarán en esta misma ruta, <a href="#/aviso" onClick={event => event.currentTarget.closest("dialog")?.close()}>/aviso</a>, con su fecha de actualización. Si cambian las finalidades o se requiere un nuevo consentimiento, se informará antes de realizar ese tratamiento.</p>
+    <p>Este aviso se basa en la <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf" target="_blank" rel="noopener noreferrer">Ley Federal de Protección de Datos Personales en Posesión de los Particulares</a>. Puedes acudir a la Secretaría Anticorrupción y Buen Gobierno para los procedimientos de protección de derechos que correspondan.</p>
+  </article>;
+}

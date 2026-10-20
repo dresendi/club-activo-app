@@ -16,7 +16,7 @@ test('mobile API validates tokens and live account state without exposing privat
     assert.equal((await fetch(base+'/v1/me',{headers:{Authorization:'Bearer invalid'}})).status,401);
     assert.equal(queried,0);
     const result=await fetch(base+'/v1/me',{headers:{Authorization:'Bearer valid'}});
-    assert.deepEqual(await result.json(),{name:'Test Member',isAdmin:false,isCommittee:true,canDownloadReports:true});
+    assert.deepEqual(await result.json(),{name:'Test Member',firstName:'Test Member',isLoggedIn:true,isAdmin:false,isCommittee:true,canDownloadReports:true});
     assert.equal(result.headers.get('cache-control'),'no-store');
     active=false;
     assert.equal((await fetch(base+'/v1/events',{headers:{Authorization:'Bearer valid'}})).status,403);
